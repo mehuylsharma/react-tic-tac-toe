@@ -1,0 +1,62 @@
+/* Fonts */
+
+@font-face {
+    font-family: "LGCafe";
+    src: url('./fonts/LGCafe\ Bold.ttf')
+}
+
+@font-face {
+    font-family: "Nevrada";
+    src: url('./fonts/Nevrada_Neue.ttf')
+}
+
+/* Styling */
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    border: 1px solid black;
+    font-family: 'LGCafe';
+    text-align: center;
+    width: 800px;
+    height: 700px;
+}
+
+.board-head {
+    font-size: 48px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.board-row {
+    height: 30%;
+    width: 100%;
+}
+
+.board-row button, .board-reset {
+    background-color: white;
+    font-family: 'LGCafe';
+    font-size: 128px;
+    width: 33%;
+    height: 100%;
+    transition: background-color 1s ease-out;
+    border: none;
+}
+
+.board-reset {
+    font-size: 24px;
+    width: 20%;
+}
+
+.board-row button:hover {
+    background-color: rgb(203, 230, 210);
+    transition: background-color 0.25s ease-in;
+}
+
+.board-reset:hover {
+    background-color: rgb(230, 203, 203);
+    transition: background-color 0.25s ease-in;
+}
